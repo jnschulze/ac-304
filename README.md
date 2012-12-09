@@ -18,6 +18,7 @@ So I came up with the idea of writing this module.
    * ...requires a mechanism to invalidate the cache entries which would be difficult to implement (in respect of permissions, theme etc.)
    * ...requires additional storage space (since most resources need to be cache per user, see point #1)
    * ...shouldn't be that much faster because activeCollab caches objects anyway
+   * ...doesn't affect the security of your aC instance because permission checking is still up to the aC core.
 
    **cons**:
    * Hashing the response on-the-fly is quite CPU-intensive.  
