@@ -14,10 +14,10 @@ So I came up with the idea of writing this module.
 * Works for activeCollab 2.3.x
 * This early prototype always generates the ETag headers on the fly by buffering the output and hashing the content (instead of caching the whole response on the server-side)  
    **pros**:  
-   caching the response as a whole
-   * requires a mechanism to invalidate the cache entries which would be difficult to implement (in respect of permissions, theme etc.)
-   * requires additional storage space (since most resources need to be cache per user, see point #1)
-   * shouldn't be that much faster because activeCollab caches objects anyway
+   caching the response as a whole...
+   * ...requires a mechanism to invalidate the cache entries which would be difficult to implement (in respect of permissions, theme etc.)
+   * ...requires additional storage space (since most resources need to be cache per user, see point #1)
+   * ...shouldn't be that much faster because activeCollab caches objects anyway
 
    **cons**:
    * Hashing the response on-the-fly is quite CPU-intensive.  
