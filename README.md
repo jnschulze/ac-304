@@ -26,13 +26,15 @@ So I came up with the idea of writing this module.
 
 
 ### Installation
-Just put everything into the "modules" directory of you activeCollab instance.  
-Enable the module in the admin area.  
+Just put everything into the "modules" directory of your activeCollab instance.  
+Install/Enable the module in the admin area.  
+Configure the module.  
 That's it.
 
 
 ### ToDo
 * Figure out the optimal hashing algorithm in PHP (high efficieny, low risk of collision)
 * Add activeCollab 3.x support
-* Add server-side response caching where cache invalidation is simple to implement (API requests etc.)
+* Add server-side response caching where cache invalidation is simple to implement (API requests etc.)  
+***An experimental implementation can be enabled in the admin options***
 * If hashing turns out disadvantageous (in terms of CPU overhead), only allow mobile user agents
